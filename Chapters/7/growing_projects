@@ -1,0 +1,46 @@
+/*programs can be split into multiple files aand multiple modules mult (modules-> mult files)
+public and private used to limit details
+can't have same name in same scope*/
+
+/*the abilty to determine which details are private  and what names are in each scope are referrede to as the modle system
+  Packages -> lets you build,test,and share crates
+  Crates -> Tree of modules that poduces a library or executable
+  Modules and use -> let you control the orginization, scope, and privacy of paths
+  Paths -> way of naming an iem, such as a struct, funtion, or module 
+
+Crates: smallest amount of code rust considers at compile time(even a single file ran using rustc is considerd a crate) 
+   two types, Binary and library
+    
+    Binary-programs -> you can compile to an executable
+    Library crates -> dont have main function, intended to be shared with multiple projects, at most 1 of these per package
+
+Package: 1 or more crates that provides a set of funtionality, contains cargo.toml, cargo is a package  
+also conatins cargo library the package depends on
+  one library crate per cargo
+
+Modules:lets us organize within a crate for readabillity and easy reuse
+  also allow us to control the privacy of items because code wihtin a module is private by default 
+
+  modules can be described as a MODULE Tree
+
+    ex. (see restaurant cargo)
+
+    crate
+    |->front_of_house
+    |__->hosting
+    |_____->add_to waitlist
+    |_____->seat_at_table
+    |__->serving
+    |______->take_order    
+    |_______->serve_order
+    |_______->take_payment
+   
+
+hosting and serving would be considered siblings
+
+pathing: setup similar to file system path, to types of pathing
+  absolute path: path from root(crate)
+  relative path: path from current module, can be navigated using self,super, or an identifier in the current module(see restaurant for ex)
+
+  uses ::
+*/

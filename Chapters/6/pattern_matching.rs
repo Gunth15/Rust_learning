@@ -19,6 +19,7 @@ fn main(){
     /*pattern matching is a very powerful feature which allows you to compare values with a series
      * of patterns*/
 
-
+    /*Pattern matching is exaustive, all cases must be covered*
+      <_> is wildcard for a pattern and unit <()> tells the rust it wont return anything/
 
 } 
