@@ -6,7 +6,7 @@ can't have same name in same scope*/
   Packages -> lets you build,test,and share crates
   Crates -> Tree of modules that poduces a library or executable
   Modules and use -> let you control the orginization, scope, and privacy of paths
-  Paths -> way of naming an iem, such as a struct, funtion, or module 
+  Paths -> way of naming an item, such as a struct, funtion, or module 
 
 Crates: smallest amount of code rust considers at compile time(even a single file ran using rustc is considerd a crate) 
    two types, Binary and library
